@@ -1,0 +1,25 @@
+BasedOnStyle: LLVM
+IndentWidth: 8
+BreakBeforeBraces: Allman
+ColumnLimit: 0
+ReflowComments: false
+AlignTrailingComments: true
+SpacesBeforeTrailingComments: 10
+AlignConsecutiveAssignments: true
+
+PointerAlignment: Left
+SortIncludes: true
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^<.*\.h>'
+    Priority: 1
+  - Regex: '^<.*>'
+    Priority: 2
+  - Regex: '.*'
+    Priority: 3
+
+IndentCaseLabels: true
+# 允许单行函数、if 语句等保持在一行，减少垂直空间浪费
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
